@@ -2,7 +2,7 @@
 # These task install application
 
 - name: update packages
-  apt: update_cache=yes
+  yum: update_cache=yes
 
 - name: install git, curl, make, nodejs etc.
   apt: pkg={{item}} state=present
