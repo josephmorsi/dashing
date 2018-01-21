@@ -3,8 +3,10 @@
 
 #- name: update packages
   #yum: update_cache=yes
+#- name: install updates
+  #yum: update_cache=yes
 - name: install updates
-  yum: update_cache=yes
+  yum: name=* state=latest
  # when: ansible_os_family == "RedHat
 - name: install git, curl, make, nodejs etc.
   yum: pkg={{item}} state=present
