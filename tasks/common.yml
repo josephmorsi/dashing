@@ -5,7 +5,7 @@
   yum: update_cache=yes
 
 - name: install git, curl, make, nodejs etc.
-  apt: pkg={{item}} state=present
+  yum: pkg={{item}} state=present
   with_items:
     - gcc
     - g++
