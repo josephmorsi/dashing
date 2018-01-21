@@ -1,0 +1,19 @@
+---
+
+# username & group
+user: vagrant
+group: vagrant
+
+# rbenv
+rbenv_root: /usr/local/rbenv
+
+# ruby version 
+ruby_version: 1.9.3-p484
+
+# test project name 
+dashboard_name: dashboard
+
+# gem binaries
+gem_bin: /root/.gem/ruby/1.9.1/bin
+
+

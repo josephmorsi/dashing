@@ -1,0 +1,6 @@
+---
+# Task file for dashing
+- include: common.yml
+- include: rbenv.yml
+- include: gem.yml
+- include: test-dashing.yml

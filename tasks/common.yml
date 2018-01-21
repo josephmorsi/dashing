@@ -1,0 +1,24 @@
+---
+# These task install application
+
+- name: update packages
+  apt: update_cache=yes
+
+- name: install git, curl, make, nodejs etc.
+  apt: pkg={{item}} state=present
+  with_items:
+    - gcc
+    - g++
+    - curl
+    - make
+    - libv8-dev
+    - nodejs
+    - libssl-dev
+    - libxml2-dev
+    - zlib1g-dev
+    - zsh
+    - libreadline-dev
+    - libyaml-dev
+    - build-essential
+
+
